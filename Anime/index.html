@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>The Zen Fusion</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="footer.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/zenfusion-favicon-color.svg">
+  <script src="/auth/session.js" defer type="module"></script>
+  <script src="../auth/music.js" defer type="module"></script>
+
+</head>
+
+<body>
+  <header class="header">
+    <a href="/index.html" class="logo">
+      <img
+        src="/assets/zenfusion-high-resolution-logo-transparent.svg"
+        width="150"
+        alt="The Zen Fusion home"
+      />
+    </a>
+
+
+    <div class="navigation">
+      <a href="/home.html">Home</a>
+    </div>
+
+    <div class="navigation">
+      <a href="/Movies/index.html">Movies</a>
+    </div>
+
+    <div class="navigation current-page">
+      <a href="/Anime/index.html">Anime</a>
+    </div>
+
+    <div class="navigation">
+      <a href="/Music/index.html">Music</a>
+    </div>
+
+    <div id="profile-icon">
+      <a href="../Music/profile.html">
+          <img src="../Music/img/user.png" width="40" alt="profile" id="profile-image">
+      </a>
+
+      </div>
+
+
+    </header>
+
+
+
+  <main>
+    <section class="search-section">
+      <div class="container">
+        <form id="search-form" action="" method="get">
+          <div id="search-container">
+            <input type="search" name="search" placeholder="Search for Anime...">
+            <button type="submit">Search</button>
+          </div>
+          <div class="switch-container">
+            <div id="toggle-state">Sub</div>
+            <label class="switch">
+              <input type="checkbox" id="language-toggle" checked>
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </form>
+        <div id="search-results"></div>
+        <div class="loading-spinner" id="loading-spinner">
+          <div class="spinner"></div>
+        </div>
+        <div id="pagination" class="pagination hidden">
+          <button id="prev-page">Previous</button>
+          <button id="next-page">Next</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+<div class="text-center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+</div>
+
+  <footer>
+    <div class="footer">
+    <div class="footer-row">
+        <a href="https://github.com/Ash-codes18/"><i class="fa fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/ashmit-mehta/"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/mehta.ashmit/"><i class="fa fa-instagram"></i></a>
+    <a href="https://twitter.com/AshmitMeht18178"><i class="fa fa-twitter"></i></a>
+    </div>
+    
+    <div class="footer-row">
+        <a href="../home.html">
+            <img src="../assets/zenfusion-favicon-color.svg">
+        </a>
+    </div>
+    
+    <div class="footer-row">
+    The Zen Fusion Copyright © 2024 Aditya Singh
+    </div>
+    </div>
+    </footer>
+    
+
+  <script src="main.js"></script>
+</body>
+
+</html>
